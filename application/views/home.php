@@ -54,6 +54,20 @@
 		        	
 		    }});
 		}
+		function done_task(id){
+			$('#p'+id).children("span").html("<s>"+$('#p'+id).children("span").text()+"</s>");
+			$.ajax({
+				url: "<?php echo base_url('welcome/update_task'); ?>", 
+				 type: "POST",
+				  data: {task_id : id, task_name : $('#p'+id).children("span").html()},
+				  dataType: "json",
+				success: function(result){
+					if(result=='updated'){
+						$('#p'+id).children("i.text-success").remove();
+					}
+		        	
+		    }});
+		}
 
 		function edit_task(id){
 			$("p:not(#p"+id+")").children("span").css("font-weight","normal");
@@ -77,6 +91,7 @@
 		<?php foreach($result as $data){ ?>
 			<p id="p<?php  echo $data->id;?>">
 				<span><?php  echo $data->task ;?></span>
+			<i class="text-success" style="cursor: pointer" onclick="done_task(<?php  echo $data->id;?>)">done</i>
 			<i class="text-primary" style="cursor: pointer" onclick="edit_task(<?php  echo $data->id;?>)">edit</i>
 			<i class="text-danger" style="cursor: pointer" onclick="task_delete(<?php  echo $data->id;?>)">delete</i>
 			  </p>
