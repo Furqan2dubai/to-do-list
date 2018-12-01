@@ -1,15 +1,16 @@
-
+###################
 TO Do Task Project
+###################
 This project is for "Project Kingdom Blockchain Technology Cloud Service and Datacenters Providers LLC" as my test.
-
+###################
 THis project is develop on CodeIgniter and Bootstrap.
 the design and functionality is very simple but efficient.
-
+###################
 To-Do Application Description:
 ● Has user authentication
 ● Able to create, update, delete a To-Do
 ● Able to mark complete a To-Do
-.............................................
+
 ###################
 What is CodeIgniter
 ###################
