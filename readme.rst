@@ -9,16 +9,16 @@ the design and functionality is very simple but efficient.
 To-Do Application Description:
 ● Has user authentication
 ● Able to create, update, delete a To-Do
-● Able to mark complete a To-Do
+● Able to mark complete a To-Do.
 ####################
 email: furqan2dubai@gmail.com
 passsword: 123456
 ####################
 database is in db folder.
 ####################
-feel free to contact +971-58890-1743
+feel free to contact +971-58890-1743.
 ###################
-What is CodeIgniter
+What is CodeIgniter.
 ###################
 
 CodeIgniter is an Application Development Framework - a toolkit - for people
